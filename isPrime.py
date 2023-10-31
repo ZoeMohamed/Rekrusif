@@ -22,6 +22,8 @@
 
 
 
+arrayx = []
+
 
 
 def prime_checker(n,i):
@@ -31,7 +33,7 @@ def prime_checker(n,i):
     elif n == i:
         return True
     elif n % i == 0:
-         return False
+         return arrayx.append(i)
     
     return prime_checker(n,i+1)
         
@@ -40,4 +42,4 @@ def prime_number(n):
 
 
 print(prime_number(11))
-    
+print(arrayx)
